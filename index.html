@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Richard Sanchez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cv-container">
+    <aside class="left-column">
+      <img
+        id="profile-img"
+        src="https://i.pinimg.com/736x/bb/aa/22/bbaa22c230379f4fc0a0e3a538c80772.jpg"
+        alt="Profile Photo"
+        class="profile-img"
+      />
+
+      <section>
+        <h2>Contact</h2>
+        <ul id="contact-list"></ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul id="education-list"></ul>
+        <button onclick="addEducation()">+ Add Education</button>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul id="skills-list"></ul>
+        <button onclick="addSkill()">+ Add Skill</button>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul id="languages-list"></ul>
+      </section>
+    </aside>
+
+    <main class="right-column">
+      <header>
+        <h1 id="cv-name"></h1>
+        <p id="cv-title"></p>
+      </header>
+
+      <section class="profile">
+        <h2>Profile</h2>
+        <p id="cv-profile" onclick="editProfile()"></p>
+      </section>
+
+      <section class="experience">
+        <h2>Work Experience</h2>
+        <ul id="experience-list"></ul>
+        <button onclick="addExperience()">+ Add Experience</button>
+      </section>
+
+      <section class="reference">
+        <h2>Reference</h2>
+        <ul id="reference-list"></ul>
+      </section>
+
+      <section>
+        <button onclick="saveManually()">💾 Save CV</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
